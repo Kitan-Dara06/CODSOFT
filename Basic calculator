@@ -1,0 +1,28 @@
+import math
+def calculation():
+   text =input('what is a your first value:  ')
+   text1 =input(' what is your second value  ')
+   try:
+        text = int(text)
+        text1 = int(text1)
+   except ValueError:
+        print('Incorrect value type. Please enter numbers.')
+        raise ValueError('This is not a number')
+   def value():
+         text3 = input('chose between multiply, add , subtract, divide \n ')
+         if text3 == 'multiply':
+             val = text * text1
+         elif text3 == 'add':
+             val= text + text1
+         elif text3 == 'subtract':
+              val= text - text1
+         elif text3 == 'divide':
+             val = text // text1  
+         else:
+             print('Invalid choices. Please choose')
+             return None
+         return val
+       
+   return value()
+  val = calculation()
+   print(val)
